@@ -35,6 +35,9 @@ export function activate(context: ExtensionContext): void {
     // Delete a connection
     commands.registerCommand('Redis.Connection.Delete', (element: RedisItem) => provider.delete(element.id));
 
+    // Delete All connection
+    commands.registerCommand('Redis.Connection.DeleteAll', () => provider.deleteAll());
+
     // Reload server
     commands.registerCommand('Redis.Connection.Reload', (element: RedisItem) => element.refresh());
 

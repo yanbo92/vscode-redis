@@ -1,4 +1,5 @@
 # Redis for Visual Studio Code
+## This versoin add a command 'Redis.Connection.DeleteAll' to remove all connections.
 
 [![Build status](https://dev.azure.com/pikadun/vscode-redis/_apis/build/status/vscode-redis-build)](https://dev.azure.com/pikadun/vscode-redis/_build?definitionId=6)
 [![installs](https://vsmarketplacebadge.apphb.com/installs-short/Dunn.redis.svg)](https://marketplace.visualstudio.com/items?itemName=Dunn.redis)

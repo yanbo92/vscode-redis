@@ -61,6 +61,16 @@ export default class Provider implements TreeDataProvider<Element> {
         }
     }
 
+    async deleteAll(): Promise<void> {
+        const ids = Object.keys(this.configStore.all());
+        if (ids.length === 0) {
+            return;
+        }
+    
+        ids.forEach(id => this.configStore.delete(id));
+        this.refresh();  // Refresh the tree view after deleting all connections        
+    }
+    
     async test(config: ConnectionConfig): Promise<void> {
         const connection = new RedisItem('test', config);
 

@@ -65,7 +65,7 @@
     "@camaro/redis": "^2.4.0"
   },
   "activationEvents": [
-    "onView:RedisExplorer"
+		"onStartupFinished"
   ],
   "contributes": {
     "viewsContainers": {
@@ -107,6 +107,11 @@
       {
         "command": "Redis.Connection.Add",
         "title": "Add Connection",
+        "category": "Redis"
+      },
+      {
+        "command": "Redis.Connection.DeleteAll",
+        "title": "Delete All Connection",
         "category": "Redis"
       },
       {
